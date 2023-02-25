@@ -1,0 +1,2 @@
+Y’a plus de C en réseaux
+Sometimes when printf doesn't work you need to use a real debugger
