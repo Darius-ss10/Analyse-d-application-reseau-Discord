@@ -1,0 +1,42 @@
+<div>
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="data.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    data = $data
+
+    Chart.defaults.font.size = 14
+
+    var options = {
+        plugins: {
+
+        },
+        responsive: true,
+        scales: {
+        x: {
+            stacked: true,
+        },
+        y: {
+            stacked: true
+        }
+        }
+    }
+    
+        console.log(data)
+        const config = {
+            type: 'bar',
+            data: {
+            labels: ['audio', 'video', 'screenshare'],
+            datasets: data
+            },
+            options: options
+        };
+    
+        new Chart(ctx, config);
+    
+  </script>
+  

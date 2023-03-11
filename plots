@@ -1,0 +1,191 @@
+#!/bin/python3
+
+import pyshark
+import os
+import matplotlib.pyplot as plt
+import json
+import numpy as np
+import seaborn as sns
+from string import Template
+
+dir_context = ["/ethernet", "/ethernet_web", "/shared_connection", "/wifi_eduroam"]
+path_pwd = os.getcwd() 
+
+files = []
+for dir in dir_context:
+    path = os.path.realpath(path_pwd + dir)
+    dir_list = os.listdir(path)
+    dir_list = [dir + "/" + f for f in dir_list if os.path.isfile(path_pwd + dir + '/' + f)]
+    files = files + dir_list
+
+
+def get_packets_per_minute(files):
+
+    scenarios = {}
+
+    for filename in files:
+        scenario = filename.split("-")[1]
+        if not scenario in scenarios:
+            scenarios[scenario] = 0
+
+        name = path_pwd + filename
+        cap = pyshark.FileCapture(name)
+        cap.load_packets()
+        packet_amount = len(cap)
+        time_delta = cap[packet_amount-1].sniff_time - cap[0].sniff_time
+        seconds = time_delta.total_seconds()
+        minutes = seconds / 60
+        
+        scenarios[scenario] += packet_amount / minutes
+        
+        print("Done " + str(packet_amount) + " " + filename)
+    
+    for key in scenarios:
+        scenarios[key] = scenarios[key] / len(dir_context)
+
+    # Write to file
+    with open("_outputs/packets_per_minute.txt", "w") as f:
+        for key in scenarios:
+            f.write(key + " : " + str(scenarios[key]) + "\n")
+    
+    return scenarios
+
+def repartition_udp(files):
+
+    scenarios = {}
+
+    for filename in files:
+        scenario = filename.split("-")[1]
+        if (scenario == "message" or scenario == "file" or scenario == "connect"):
+            continue
+        dic = {}
+        if not scenario in scenarios:
+            scenarios[scenario] = dic
+
+        name = path_pwd + filename
+        cap = pyshark.FileCapture(name)
+        cap.load_packets()
+        for pkt in cap: 
+            temp = pkt.highest_layer if pkt.highest_layer != "DATA" else "UDP"
+            dic[temp] = dic.get(temp, 0) + 1
+           
+        print("Done " + filename)
+
+    # Write to file
+    with open("_outputs/repartition.json", "w") as f:
+        f.write(json.dumps(scenarios, indent=4))
+    
+    return scenarios
+
+def plot_packets_per_minute(filename):
+    # Read the file
+    with open(filename, "r") as f:
+        lines = f.readlines()
+        scenarios = {}
+        for line in lines:
+            line = line.split(" : ")
+            scenarios[line[0]] = float(line[1])
+    x = scenarios.keys()
+    y = scenarios.values()
+
+    # Create the bar chart
+    plt.bar(x, y)
+
+    # Add labels and title
+    plt.xlabel('Scénario')
+    plt.ylabel('Paquets par minute')
+    plt.title('Paquets par minute par scénario')
+
+    # Show the plot
+    plt.savefig("_outputs/packets_per_minute.pdf")
+    plt.show()
+
+"""
+def plot_repartition(filename):
+    # Read the file
+    with open(filename, "r") as f:
+        dict = json.loads(f.read())
+
+    sizes = []
+    labels = []
+
+    print(dict)
+
+    for key in dict:
+        somme = 0
+        for key_second in sorted(dict[key].keys()):
+            somme += dict[key][key_second]
+        sizes.append([dict[key][key_temp] / somme for key_temp in sorted(dict[key].keys())])
+        labels.append([key_temp1 for key_temp1 in sorted(dict[key].keys())])
+
+    # Create a color list with maximuum max(keys_somme) colors
+    colors = sns.color_palette('hls', len(protocols)).as_hex()
+
+    fig, axs = plt.subplots(1, 3, figsize=(12, 4))
+
+    for (i, key) in enumerate(dict):
+        patches, texts = axs[i].pie(sizes[i], labels=None, colors=colors )
+        axs[i].set_title(key)
+    plt.legend(patches, protocols, loc="best")
+
+    fig.suptitle('Répartition des protocoles par scénario')
+    plt.tight_layout()
+
+
+    # Show the plot
+    plt.savefig("_outputs/repartitions.pdf")
+    plt.show()
+"""
+    
+def reverse_dic(filename):
+    with open(filename, "r") as f:
+        dict = json.loads(f.read())
+
+    protocols = set()
+    for key in dict:
+        for prot in dict[key]:
+            protocols.add(prot)
+
+    
+    for key in dict:
+        somme = 0
+        for prot in dict[key]:
+            somme += dict[key][prot]
+        for prot in dict[key]:
+            dict[key][prot] = dict[key][prot] / somme
+
+    new_dic = {}
+    for key in dict:
+        for prot in protocols:
+            if not prot in new_dic:
+                new_dic[prot] = []
+            if prot in dict[key]:
+                new_dic[prot].append(dict[key][prot])
+            else:
+                new_dic[prot].append(0)
+
+    array = []
+    colors = sns.color_palette('hls', len(protocols)).as_hex()
+    for (i, key) in enumerate(new_dic):
+        temp_key = key
+        if key == "_WS.MALFORMED":
+            temp_key = "Others"
+        array.append({"label" : temp_key, "data" : new_dic[key], "borderWidth" : 1, "backgroundColor": colors[i]})
+
+    with open("_outputs/datasets.json", "w") as f:
+        f.write(json.dumps(array, indent=4))
+
+def fill_template():
+    with open("_outputs/datasets.json", "r") as file:
+        with open("template.html", "r") as file2:
+            with open("graph.html", "w") as file3:
+                str = file2.read()
+                temp = Template(str)
+                str = temp.substitute(data=file.read())
+                file3.write(str)
+
+
+
+#repartition_udp(files)
+reverse_dic("_outputs/repartition.json")
+fill_template()

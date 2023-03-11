@@ -1,0 +1,39 @@
+{
+    "audio": {
+        "ARP": 24,
+        "ICMPV6": 46,
+        "TLS": 42,
+        "TCP": 46,
+        "QUIC": 37,
+        "DNS": 8,
+        "UDP": 206,
+        "RTCP": 14
+    },
+    "video": {
+        "MDNS": 5,
+        "ARP": 19,
+        "ICMPV6": 34,
+        "TLS": 54,
+        "TCP": 84,
+        "QUIC": 84,
+        "DNS": 14,
+        "UDP": 3407,
+        "RTCP": 126,
+        "_WS.MALFORMED": 9,
+        "DHCPV6": 2
+    },
+    "screenshare": {
+        "ARP": 34,
+        "DHCPV6": 1,
+        "ICMPV6": 64,
+        "TLS": 221,
+        "TCP": 231,
+        "QUIC": 149,
+        "DNS": 28,
+        "UDP": 6275,
+        "RTCP": 113,
+        "_WS.MALFORMED": 8,
+        "NTP": 2,
+        "MDNS": 2
+    }
+}

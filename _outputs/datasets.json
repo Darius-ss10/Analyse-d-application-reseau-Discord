@@ -1,0 +1,122 @@
+[
+    {
+        "label": "DNS",
+        "data": [
+            0.018912529550827423,
+            0.0036477331943720686,
+            0.003928170594837262
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#db5f57"
+    },
+    {
+        "label": "TLS",
+        "data": [
+            0.09929078014184398,
+            0.014069828035435123,
+            0.031004489337822672
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#dba157"
+    },
+    {
+        "label": "ICMPV6",
+        "data": [
+            0.10874704491725769,
+            0.008858780614903595,
+            0.008978675645342313
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#d3db57"
+    },
+    {
+        "label": "ARP",
+        "data": [
+            0.05673758865248227,
+            0.0049504950495049506,
+            0.004769921436588103
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#91db57"
+    },
+    {
+        "label": "DHCPV6",
+        "data": [
+            0,
+            0.0005211047420531526,
+            0.00014029180695847364
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#57db5f"
+    },
+    {
+        "label": "TCP",
+        "data": [
+            0.10874704491725769,
+            0.021886399166232414,
+            0.032407407407407406
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#57dba1"
+    },
+    {
+        "label": "UDP",
+        "data": [
+            0.48699763593380613,
+            0.8877019280875456,
+            0.880331088664422
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#57d3db"
+    },
+    {
+        "label": "MDNS",
+        "data": [
+            0,
+            0.0013027618551328818,
+            0.0002805836139169473
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#5791db"
+    },
+    {
+        "label": "QUIC",
+        "data": [
+            0.08747044917257683,
+            0.021886399166232414,
+            0.02090347923681257
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#5f57db"
+    },
+    {
+        "label": "RTCP",
+        "data": [
+            0.03309692671394799,
+            0.03282959874934862,
+            0.01585297418630752
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#a157db"
+    },
+    {
+        "label": "Others",
+        "data": [
+            0,
+            0.002344971339239187,
+            0.001122334455667789
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#db57d3"
+    },
+    {
+        "label": "NTP",
+        "data": [
+            0,
+            0,
+            0.0002805836139169473
+        ],
+        "borderWidth": 1,
+        "backgroundColor": "#db5791"
+    }
+]
