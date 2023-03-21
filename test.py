@@ -1,4 +1,4 @@
-#!/bin/python3
+
 
 import pyshark
 import os
@@ -173,4 +173,6 @@ def fill_template():
 #plot_packets_per_minute("_outputs/packets_per_minute.txt")
 #reverse_dic("_outputs/repartition.json")
 #fill_template()
-print(get_dns_names(files))
+d = get_dns_names(files))
+#d = {'rotterdam2503.discord.media': 16, 'discord.com': 232, 'gateway.discord.gg': 16, 'status.discord.com': 16, 'cdn.discordapp.com': 80, 'discord-attachments-uploads-prd.storage.googleapis.com': 48, 'rotterdam7413.discord.media': 16, 'rotterdam3955.discord.media': 16, 'rotterdam11002.discord.media': 16, 'rotterdam3257.discord.media': 16, 'connectivity-check.ubuntu.com': 8, 'rotterdam6078.discord.media': 28, 'ocsp.pki.goog': 8, 'rotterdam9095.discord.media': 24, 'rotterdam2332.discord.media': 24, 'rotterdam3897.discord.media': 24, 'rotterdam4472.discord.media': 22, 'api.openweathermap.org': 6, 'rotterdam11006.discord.media': 10, 'locprod2-elb-us-west-2.prod.mozaws.net': 8, 'discordapp.com': 28, 'rotterdam1071.discord.media': 8, 'rotterdam7231.discord.media': 8, 'rotterdam254.discord.media': 8, 'rotterdam4782.discord.media': 8, 'rotterdam7223.discord.media': 12, 'fedoraproject.org': 4, 'location.services.mozilla.com': 4, 'rotterdam7428.discord.media': 12, 'rotterdam4251.discord.media': 12, 'rotterdam2007.discord.media': 12, 'rotterdam6818.discord.media': 12, 'media.discordapp.net': 8}
+print(json.dumps(d, indent=4))
