@@ -177,9 +177,9 @@ def fill_template():
 
 
 
+#get_dns_names(files)
 #repartition_udp(files)
 #get_packets_per_minute(files)
-#plot_packets_per_minute("_outputs/packets_per_minute.txt")
-#reverse_dic("_outputs/repartition.json")
-#fill_template()
-get_dns_names(files)
+plot_packets_per_minute("_outputs/packets_per_minute.txt")
+reverse_dic("_outputs/repartition.json")
+fill_template()
