@@ -1,0 +1,277 @@
+{
+    "rotterdam3257.discord.media": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap"
+        ]
+    },
+    "cdn.discordapp.com": {
+        "count": 80,
+        "origins": [
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap"
+        ]
+    },
+    "connectivity-check.ubuntu.com": {
+        "count": 8,
+        "origins": [
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap"
+        ]
+    },
+    "rotterdam2503.discord.media": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap"
+        ]
+    },
+    "discord.com": {
+        "count": 232,
+        "origins": [
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/shared_connection/D-message-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap"
+        ]
+    },
+    "gateway.discord.gg": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap"
+        ]
+    },
+    "status.discord.com": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap"
+        ]
+    },
+    "discord-attachments-uploads-prd.storage.googleapis.com": {
+        "count": 48,
+        "origins": [
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap"
+        ]
+    },
+    "rotterdam7413.discord.media": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap"
+        ]
+    },
+    "rotterdam3955.discord.media": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap"
+        ]
+    },
+    "rotterdam11002.discord.media": {
+        "count": 16,
+        "origins": [
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap"
+        ]
+    },
+    "rotterdam4472.discord.media": {
+        "count": 22,
+        "origins": [
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-video-web.pcap"
+        ]
+    },
+    "api.openweathermap.org": {
+        "count": 6,
+        "origins": [
+            "/ethernet_web/D-video-web.pcap"
+        ]
+    },
+    "rotterdam6078.discord.media": {
+        "count": 28,
+        "origins": [
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/D-audio-web.pcap"
+        ]
+    },
+    "ocsp.pki.goog": {
+        "count": 8,
+        "origins": [
+            "/ethernet_web/A-file-web.pcap"
+        ]
+    },
+    "rotterdam9095.discord.media": {
+        "count": 24,
+        "origins": [
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap"
+        ]
+    },
+    "rotterdam2332.discord.media": {
+        "count": 24,
+        "origins": [
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap"
+        ]
+    },
+    "rotterdam3897.discord.media": {
+        "count": 24,
+        "origins": [
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap"
+        ]
+    },
+    "rotterdam11006.discord.media": {
+        "count": 10,
+        "origins": [
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap"
+        ]
+    },
+    "locprod2-elb-us-west-2.prod.mozaws.net": {
+        "count": 8,
+        "origins": [
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap"
+        ]
+    },
+    "discordapp.com": {
+        "count": 28,
+        "origins": [
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/A-message-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap"
+        ]
+    },
+    "rotterdam1071.discord.media": {
+        "count": 8,
+        "origins": [
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap"
+        ]
+    },
+    "rotterdam7231.discord.media": {
+        "count": 8,
+        "origins": [
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap"
+        ]
+    },
+    "rotterdam254.discord.media": {
+        "count": 8,
+        "origins": [
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap"
+        ]
+    },
+    "rotterdam4782.discord.media": {
+        "count": 8,
+        "origins": [
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap"
+        ]
+    },
+    "fedoraproject.org": {
+        "count": 4,
+        "origins": [
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap"
+        ]
+    },
+    "location.services.mozilla.com": {
+        "count": 4,
+        "origins": [
+            "/wifi_eduroam/A-file-wifi.pcap"
+        ]
+    },
+    "rotterdam7223.discord.media": {
+        "count": 12,
+        "origins": [
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap"
+        ]
+    },
+    "rotterdam6818.discord.media": {
+        "count": 12,
+        "origins": [
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "rotterdam7428.discord.media": {
+        "count": 12,
+        "origins": [
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap"
+        ]
+    },
+    "rotterdam4251.discord.media": {
+        "count": 12,
+        "origins": [
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap"
+        ]
+    },
+    "rotterdam2007.discord.media": {
+        "count": 12,
+        "origins": [
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap"
+        ]
+    },
+    "media.discordapp.net": {
+        "count": 8,
+        "origins": [
+            "/wifi_eduroam/D-message-wifi.pcap"
+        ]
+    }
+}
