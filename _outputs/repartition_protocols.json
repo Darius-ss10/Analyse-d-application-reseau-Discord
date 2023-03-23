@@ -1,0 +1,463 @@
+{
+    "MDNS": {
+        "count": 214,
+        "origins": [
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-message-web.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "ARP": {
+        "count": 322,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-message-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-message-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "ICMPV6": {
+        "count": 585,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-message-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "TLS": {
+        "count": 3757,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-message-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/A-message-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/shared_connection/D-message-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "TCP": {
+        "count": 5916,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-message-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/A-message-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/shared_connection/D-message-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "QUIC": {
+        "count": 4828,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/A-message-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/shared_connection/D-message-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap"
+        ]
+    },
+    "DNS": {
+        "count": 770,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-file-web.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-file-sharedConnection.pcap",
+            "/shared_connection/A-message-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-file-sharedConnection.pcap",
+            "/shared_connection/D-message-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "UDP": {
+        "count": 74874,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap",
+            "/ethernet/D-connect-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-file-web.pcap",
+            "/ethernet_web/D-message-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap",
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-message-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "RTCP": {
+        "count": 1690,
+        "origins": [
+            "/ethernet/A-audio-ethernet.pcap",
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-file-ethernet.pcap",
+            "/ethernet/A-message-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-audio-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/shared_connection/A-audio-sharedConnection.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "_WS.MALFORMED": {
+        "count": 92,
+        "origins": [
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet/D-screenshare-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/shared_connection/A-screenshare-sharedConnection.pcap",
+            "/shared_connection/A-video-sharedConnection.pcap",
+            "/shared_connection/D-audio-sharedConnection.pcap",
+            "/shared_connection/D-screenshare-sharedConnection.pcap",
+            "/shared_connection/D-video-sharedConnection.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "DHCPV6": {
+        "count": 11,
+        "origins": [
+            "/ethernet/A-connect-ethernet.pcap",
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet/A-video-ethernet.pcap",
+            "/ethernet_web/A-message-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "HTTP": {
+        "count": 10,
+        "origins": [
+            "/ethernet/D-message-ethernet.pcap",
+            "/ethernet/D-video-ethernet.pcap",
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap"
+        ]
+    },
+    "NTP": {
+        "count": 8,
+        "origins": [
+            "/ethernet/A-screenshare-ethernet.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap"
+        ]
+    },
+    "BROWSER": {
+        "count": 2,
+        "origins": [
+            "/ethernet/D-file-ethernet.pcap",
+            "/ethernet_web/D-video-web.pcap"
+        ]
+    },
+    "STUN": {
+        "count": 186,
+        "origins": [
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap"
+        ]
+    },
+    "DTLS": {
+        "count": 69,
+        "origins": [
+            "/ethernet_web/A-audio-web.pcap",
+            "/ethernet_web/A-screenshare-web.pcap",
+            "/ethernet_web/A-video-web.pcap",
+            "/ethernet_web/D-audio-web.pcap",
+            "/ethernet_web/D-screenshare-web.pcap",
+            "/ethernet_web/D-video-web.pcap"
+        ]
+    },
+    "OCSP": {
+        "count": 2,
+        "origins": [
+            "/ethernet_web/A-file-web.pcap"
+        ]
+    },
+    "SSDP": {
+        "count": 4,
+        "origins": [
+            "/ethernet_web/A-video-web.pcap"
+        ]
+    },
+    "IEEE1905": {
+        "count": 1,
+        "origins": [
+            "/ethernet_web/A-video-web.pcap"
+        ]
+    },
+    "DATA-TEXT-LINES": {
+        "count": 2,
+        "origins": [
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-message-wifi.pcap"
+        ]
+    },
+    "IGMP": {
+        "count": 13,
+        "origins": [
+            "/wifi_eduroam/A-audio-wifi.pcap",
+            "/wifi_eduroam/A-file-wifi.pcap",
+            "/wifi_eduroam/A-screenshare-wifi.pcap",
+            "/wifi_eduroam/A-video-wifi.pcap",
+            "/wifi_eduroam/D-audio-wifi.pcap",
+            "/wifi_eduroam/D-file-wifi.pcap",
+            "/wifi_eduroam/D-screenshare-wifi.pcap",
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "DHCP": {
+        "count": 7,
+        "origins": [
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    },
+    "ICMP": {
+        "count": 1,
+        "origins": [
+            "/wifi_eduroam/D-video-wifi.pcap"
+        ]
+    }
+}

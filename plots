@@ -50,7 +50,7 @@ def get_packets_per_minute(files):
     
     return scenarios
 
-def repartition_udp(files):
+def repartition_audio(files):
 
     scenarios = {}
 
@@ -73,8 +73,6 @@ def repartition_udp(files):
         
         print("Done " + filename)
 
-    print(scenarios)
-
     for scenario in scenarios.values():
         for v in scenario.values():
             v["origins"] = [i for i in v["origins"]] # change set to an array for the json format
@@ -85,6 +83,34 @@ def repartition_udp(files):
         f.write(json.dumps(scenarios, indent=4))
     
     return scenarios
+
+def repartition_protocols(files):
+
+    dic = {}
+
+    for filename in files:
+
+        name = path_pwd + filename
+        cap = pyshark.FileCapture(name)
+        cap.load_packets()
+        for pkt in cap: 
+            temp = pkt.highest_layer if pkt.highest_layer != "DATA" else "UDP"
+            dic_temp = dic.get(temp, {"count" : 0, "origins" : set()})
+            dic_temp["count"] += 1
+            dic_temp["origins"].add(filename)
+            dic[temp] = dic_temp
+        
+        print("Done " + filename)
+
+    for protocol in dic.values():
+        protocol["origins"] = [i for i in protocol["origins"]] # change set to an array for the json format
+        protocol["origins"].sort()
+
+    # Write to file
+    with open("_outputs/repartition_protocols.json", "w") as f:
+        f.write(json.dumps(dic, indent=4))
+    
+    return dic
 
 def get_dns_names(files):
     domains = {}
@@ -187,7 +213,8 @@ def fill_template():
 
 
 #get_dns_names(files)
-#repartition_udp(files)
+#repartition_audio(files)
+repartition_protocols(files)
 #get_packets_per_minute(files)
 plot_packets_per_minute("_outputs/packets_per_minute.txt")
 reverse_dic("_outputs/repartition.json")
