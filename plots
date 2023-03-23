@@ -204,7 +204,7 @@ def reverse_dic(filename):
 def fill_template():
     with open("_outputs/datasets.json", "r") as file:
         with open("template.html", "r") as file2:
-            with open("graph.html", "w") as file3:
+            with open("_outputs/graph.html", "w") as file3:
                 str = file2.read()
                 temp = Template(str)
                 str = temp.substitute(data=file.read())
@@ -214,7 +214,7 @@ def fill_template():
 
 #get_dns_names(files)
 #repartition_audio(files)
-repartition_protocols(files)
+#repartition_protocols(files)
 #get_packets_per_minute(files)
 plot_packets_per_minute("_outputs/packets_per_minute.txt")
 reverse_dic("_outputs/repartition.json")
