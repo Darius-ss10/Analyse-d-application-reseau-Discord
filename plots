@@ -58,18 +58,27 @@ def repartition_udp(files):
         scenario = filename.split("-")[1]
         if (scenario == "message" or scenario == "file" or scenario == "connect"):
             continue
-        dic = {}
-        if not scenario in scenarios:
-            scenarios[scenario] = dic
+        dic = scenarios.get(scenario, {})
+        scenarios[scenario] = dic
 
         name = path_pwd + filename
         cap = pyshark.FileCapture(name)
         cap.load_packets()
         for pkt in cap: 
             temp = pkt.highest_layer if pkt.highest_layer != "DATA" else "UDP"
-            dic[temp] = dic.get(temp, 0) + 1
-           
+            dic_temp = dic.get(temp, {"count" : 0, "origins" : set()})
+            dic_temp["count"] += 1
+            dic_temp["origins"].add(filename)
+            dic[temp] = dic_temp
+        
         print("Done " + filename)
+
+    print(scenarios)
+
+    for scenario in scenarios.values():
+        for v in scenario.values():
+            v["origins"] = [i for i in v["origins"]] # change set to an array for the json format
+            v["origins"].sort()
 
     # Write to file
     with open("_outputs/repartition.json", "w") as f:
@@ -141,9 +150,9 @@ def reverse_dic(filename):
     for key in dict:
         somme = 0
         for prot in dict[key]:
-            somme += dict[key][prot]
+            somme += dict[key][prot]["count"]
         for prot in dict[key]:
-            dict[key][prot] = dict[key][prot] / somme
+            dict[key][prot] = dict[key][prot]["count"] / somme
 
     new_dic = {}
     for key in dict:
